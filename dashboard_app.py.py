@@ -2,9 +2,10 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+import os
 
-data_path = os.path.join(os.path.dirname(__file__), "data", "ai_regulations.csv")
-
+# Define the file path without using __file__
+data_path = os.path.join("data", "ai_regulations.csv")
 
 # Load the data
 @st.cache_data
