@@ -1,0 +1,6 @@
+Country/Region,Regulation Name,Enforcement Level,Compliance Steps,Penalties
+EU,AI Act,High,"Step 1: Risk Assessment, Step 2: Documentation, Step 3: Impact Assessments, Step 4: Regular Audits","Fines up to €30 million or 6% of global turnover"
+US,Algorithmic Accountability Act of 2022,Medium,"Step 1: Audit AI Systems, Step 2: Assess Impact on Discrimination, Step 3: Regular Reporting, Step 4: Consumer Transparency","Fines up to $10 million per violation"
+US,California Consumer Privacy Act (CCPA),Medium,"Step 1: Data Collection Notice, Step 2: User Consent, Step 3: Data Access, Step 4: Deletion Requests","Fines up to $7,500 per violation"
+UK,UK AI Strategy,Medium,"Step 1: Establish AI Governance, Step 2: Ethical AI Use, Step 3: Public Consultation on AI Impact, Step 4: ...","No fixed fines or regulatory measures for non-compliance"
+EU,General Data Protection Regulation (GDPR),High,"Step 1: Data Processing Assessment, Step 2: Privacy Policy Implementation, Step 3: User Consent, Step 4: Data Protection Impact Assessment","Fines up to €20 million or 4% of annual turnover"
