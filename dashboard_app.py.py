@@ -1,11 +1,10 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import os
-print(os.getcwd())
 
 
-data_path = r"C:\Users\Hattie\OneDrive\New project\global ai\dashboard\data\ai_regulations.csv"
+data_path = os.path.join(os.path.dirname(__file__), "data", "ai_regulations.csv")
+
 
 # Load the data
 @st.cache_data
