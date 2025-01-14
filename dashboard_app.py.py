@@ -4,7 +4,7 @@ import plotly.express as px
 
 import os
 
-data_path = os.path.join(os.path.dirname(__file__), "data", "ai_regulations.csv")
+data_path = os.path.join(os.path.dirname("C:\Users\Hattie\OneDrive\New project\global ai\dashboard\data\ai_regulations.csv"), "data", "ai_regulations.csv")
 
 
 # Load the data
