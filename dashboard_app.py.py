@@ -100,7 +100,7 @@ filtered_data = pd.DataFrame(data)
 # Map country names to ISO 3166-1 alpha-3 codes
 country_iso_map = {
     'United States': 'USA', 'Germany': 'DEU', 'India': 'IND', 'France': 'FRA', 'Brazil': 'BRA',
-    'European Union': 'EU',  # Add the EU code here
+    'United Kingdom': 'GB',  # Add the EU code here
 }
 
 # Add a new column with ISO codes for countries
@@ -113,7 +113,7 @@ filtered_data = filtered_data.dropna(subset=['ISO_Code'])
 selected_countries = st.multiselect(
     "Select Countries for Enforcement Level Visualization",
     options=filtered_data['Country/Region'].unique(),
-    default=['United States', 'United Kingdom', 'European Union']  # Example default countries (including EU)
+    default=['United States', 'United Kingdom']  # Example default countries (including EU)
 )
 
 # Filter the data based on the selected countries
