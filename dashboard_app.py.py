@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-
 import os
+print(os.getcwd())
 
-data_path = os.path.join(os.path.dirname(r"C:\Users\Hattie\OneDrive\New project\global ai\dashboard\data\ai_regulations.csv"), "data", "ai_regulations.csv")
 
+data_path = "C:\Users\Hattie\OneDrive\New project\global ai\dashboard\data\ai_regulations.csv"
 
 # Load the data
 @st.cache_data
@@ -113,7 +113,7 @@ filtered_data = filtered_data.dropna(subset=['ISO_Code'])
 selected_countries = st.multiselect(
     "Select Countries for Enforcement Level Visualization",
     options=filtered_data['Country/Region'].unique(),
-    default=['United States', 'Germany', 'India', 'European Union']  # Example default countries (including EU)
+    default=['United States', 'United Kingdom', 'European Union']  # Example default countries (including EU)
 )
 
 # Filter the data based on the selected countries
@@ -194,14 +194,14 @@ import streamlit as st
 # Sample Data (Make sure this is properly formatted)
 timeline_data = {
     'Country/Region': ['EU', 'US', 'UK'],
-    'Regulation Name': ['EU AI Act', 'US Algorithmic Accountability Act', 'UK AI Strategy'],
+    'Regulation Name': ['EU AI Act', 'US Executive Order on the Safe Secure and Trustworthy Development and Use of AI,', 'UK National AI Strategy'],
     'Start Year': [2021, 2022, 2021],
     'End Year': [2024, 2024, 2025],
     'Enforcement Body': ['European Commission', 'Federal Trade Commission', 'UK Government'],
     'Law Link': [
-        'https://ec.europa.eu/digital-strategy/our-policies/artificial-intelligence_en', 
-        'https://www.congress.gov/bill/117th-congress/house-bill/6580/text',
-        'https://www.gov.uk/government/publications/uk-ai-strategy-leading-the-future-of-uk-innovation'
+        'https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng', 
+        'https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/',
+        'https://www.gov.uk/government/publications/national-ai-strategy'
     ]
 }
 
