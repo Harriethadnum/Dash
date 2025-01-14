@@ -4,8 +4,8 @@ import plotly.express as px
 
 import os
 
-# Define the file path without using __file__
-data_path = os.path.join("data", "ai_regulations.csv")
+data_path = os.path.join(os.path.dirname(__file__), "data", "ai_regulations.csv")
+
 
 # Load the data
 @st.cache_data
